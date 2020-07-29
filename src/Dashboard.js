@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Form, Button, Col} from 'react-bootstrap';
+import { Form, Button, Col } from 'react-bootstrap';
 
 const US_DAILY_URL = "https://covidtracking.com/api/v1/us/daily.json"
 const US_STATE_URL = "https://covidtracking.com/api/v1/states/"
@@ -254,7 +254,7 @@ class App extends React.Component {
                     </Form.Group>
                     <Form.Group>
                     <Col>
-                        <Button type="submit">Submit</Button>
+                        <Button type="dark" variant="warning">Submit</Button>
                     </Col>
                     </Form.Group>
                 </Form>
