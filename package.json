@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://ryansmolik03.github.io/covid-19-dashboard/",
   "dependencies": {
+    "@babel/runtime": "^7.10.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
