@@ -13,10 +13,12 @@ class ApplicationDashboard extends React.Component {
     this.state = {
       usTotalCases: "",
       usTotalDeaths: "",
+      usTotalDeathIncrease: "",
       usNewCases: "",
       usState: "",
       usStateTotalCases: "",
       usStateTotalDeaths: "",
+      usStateTotalDeathIncrease: "",
       usStateNewCases: "",
       date: "",
     };
@@ -29,6 +31,7 @@ class ApplicationDashboard extends React.Component {
         this.setState({
           usTotalCases: result[0].positive,
           usTotalDeaths: result[0].death,
+          usTotalDeathIncrease: result[0].deathIncrease,
           usNewCases: result[0].positiveIncrease,
           date: this.formatDate(result[0].date),
         });
@@ -46,6 +49,7 @@ class ApplicationDashboard extends React.Component {
           usState: result.state,
           usStateTotalCases: result.positive,
           usStateTotalDeaths: result.death,
+          usStateTotalDeathIncrease: result.deathIncrease,
           usStateNewCases: result.positiveIncrease,
         });
       });
@@ -67,9 +71,11 @@ class ApplicationDashboard extends React.Component {
           totalNationalCases={this.state.usTotalCases}
           totalNationalDeaths={this.state.usTotalDeaths}
           newNationalCases={this.state.usNewCases}
+          totalNationalDeathIncrease={this.state.usTotalDeathIncrease}
           usState={this.state.usState}
           stateTotalCases={this.state.usStateTotalCases}
           stateTotalDeaths={this.state.usStateTotalDeaths}
+          stateTotalDeathIncrease={this.state.usStateTotalDeathIncrease}
           stateNewCases={this.state.usStateNewCases}
         />
       </div>

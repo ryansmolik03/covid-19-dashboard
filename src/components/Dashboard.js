@@ -106,6 +106,9 @@ class App extends React.Component {
                     Total Deaths:{" "}
                     <b>{this.formatNumber(this.props.totalNationalDeaths)}</b>
                     <br />
+                    Total Death Increase: {" "}
+                    <b>{this.formatNumber(this.props.totalNationalDeathIncrease)}</b>
+                    <br />
                     New Cases:{" "}
                     <b>{this.formatNumber(this.props.newNationalCases)}</b>
                   </Card.Text>
@@ -126,6 +129,9 @@ class App extends React.Component {
                     <Card.Text>
                       Total Deaths:{" "}
                       <b>{this.formatNumber(this.props.stateTotalDeaths)}</b>
+                      <br />
+                      Total Death Increase: {" "}
+                      <b>{this.formatNumber(this.props.stateTotalDeathIncrease)}</b>
                       <br />
                       New Cases:{" "}
                       <b>{this.formatNumber(this.props.stateNewCases)}</b>
