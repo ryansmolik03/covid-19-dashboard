@@ -2,8 +2,8 @@ import React from "react";
 import Dashboard from "./Dashboard";
 import Jumbotron from "./Jumbotron";
 
-const US_DAILY_URL = "https://covidtracking.com/api/v1/us/daily.json";
-const US_STATE_URL = "https://covidtracking.com/api/v1/states/";
+const US_DAILY_URL = "https://api.covidtracking.com/v1/us/current.json";
+const US_STATE_URL = "https://api.covidtracking.com/v1/states/";
 
 class ApplicationDashboard extends React.Component {
   constructor(props) {
